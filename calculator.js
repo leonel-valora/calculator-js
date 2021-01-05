@@ -5,7 +5,7 @@ class Calculator {
     }
 
     run(operation) {
-        let characters = operation.split("");
+        let characters = operation;
         characters = this.resolvePriority(characters);
         console.log("array after solve priority : " + characters)
         return this.resolve(characters)
