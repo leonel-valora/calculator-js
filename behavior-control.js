@@ -59,6 +59,7 @@ let clearFields = () => {
     operationField.value = "";
     resultField.innerHTML = "0";
     charsOperation = [];
+    number = ""
 }
 
 let changeSign = () => {
