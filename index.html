@@ -13,7 +13,7 @@
             <div>
                 <p id="theme">Dark Mode</p>
                 <label class="switch">
-                    <input type="checkbox">
+                    <input type="checkbox" id="theme-switch">
                     <span class="slider round"></span>
                 </label>
             </div>
@@ -22,36 +22,37 @@
             <div class="row">
                 <button id="clean" class="highlight">C</button>
                 <button class="highlight">%</button>
-                <button value="/" class="highlight arith-opr">/</button>
-                <button class="highlight">«</button>
+                <button value="/" class="highlight arith-operator">/</button>
+                <button class="highlight" id="delete">«</button>
             </div>
             <div class="row">
-                <button value="7" class="btn">7</button>
-                <button value="8" class="btn">8</button>
-                <button value="9" class="btn">9</button>
-                <button value="x" class="highlight arith-opr">x</button>
+                <button value="7" class="btn number">7</button>
+                <button value="8" class="btn number">8</button>
+                <button value="9" class="btn number">9</button>
+                <button value="x" class="highlight arith-operator">x</button>
             </div>
             <div class="row">
-                <button value="4" class="btn">4</button>
-                <button value="5" class="btn">5</button>
-                <button value="6" class="btn">6</button>
-                <button value="-" class="highlight arith-opr">-</button>
+                <button value="4" class="btn number">4</button>
+                <button value="5" class="btn number">5</button>
+                <button value="6" class="btn number">6</button>
+                <button value="-" class="highlight arith-operator">-</button>
             </div>
             <div class="row">
-                <button value="1" class="btn">1</button>
-                <button value="2" class="btn">2</button>
-                <button value="3" class="btn">3</button>
-                <button value="+" class="highlight arith-opr">+</button>
+                <button value="1" class="btn number">1</button>
+                <button value="2" class="btn number">2</button>
+                <button value="3" class="btn number">3</button>
+                <button value="+" class="highlight arith-operator">+</button>
             </div>
             <div class="row">
                 <button id="sign" class="highlight">+/-</button>
-                <button value="0" class="btn">0</button>
-                <button value="." class="btn">.</button>
+                <button value="0" class="btn number">0</button>
+                <button id="dot" value="." class="btn">.</button>
                 <button class="highlight" id="calculate-result">=</button>
             </div>
         </div>
     </div>
     <script src="calculator.js"></script>
     <script src="behavior-control.js"></script>
+    <script src="theme.js"></script>
 </body>
 </html> 
